@@ -1,0 +1,166 @@
+/* =========================================================
+   ESTILOS EMPRESARIALES - CONTRASTE TOTAL CORREGIDO
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.stApp {
+    background: radial-gradient(circle at top right, #131B2E 0%, #0B0F19 60%);
+}
+
+header[data-testid="stHeader"] {
+    background-color: rgba(11, 15, 25, 0.85) !important;
+}
+
+/* Barra lateral (Sidebar) */
+section[data-testid="stSidebar"] {
+    background-color: #0E1420 !important;
+    border-right: 1px solid #1E293B;
+}
+
+section[data-testid="stSidebar"] h2 {
+    color: #38BDF8 !important;
+    font-size: 1.35rem;
+}
+
+/* Caja de información en el Sidebar (Fondo oscuro asegurado) */
+section[data-testid="stSidebar"] [data-testid="stAlert"],
+section[data-testid="stSidebar"] [data-testid="stAlert"] > div {
+    background-color: #162238 !important;
+    border: 1px solid #2563EB !important;
+    border-radius: 10px !important;
+    color: #F8FAFC !important;
+}
+
+section[data-testid="stSidebar"] [data-testid="stAlert"] p,
+section[data-testid="stSidebar"] [data-testid="stAlert"] strong {
+    color: #F8FAFC !important;
+}
+
+/* Títulos principales */
+h1 {
+    background: linear-gradient(90deg, #FFFFFF 0%, #38BDF8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700 !important;
+    letter-spacing: -0.02em;
+    padding-bottom: 0.2rem;
+}
+
+h2, h3, h4 {
+    color: #F8FAFC !important;
+    font-weight: 600 !important;
+}
+
+/* Tarjetas KPI (st.metric) */
+div[data-testid="stMetric"] {
+    background: linear-gradient(145deg, #162033 0%, #101726 100%);
+    border: 1px solid #26334D;
+    border-left: 4px solid #10B981;
+    padding: 20px 24px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+div[data-testid="stMetric"]:hover {
+    transform: translateY(-3px);
+    border-color: #38BDF8;
+}
+
+div[data-testid="stMetricLabel"],
+div[data-testid="stMetricLabel"] p,
+div[data-testid="stMetricLabel"] label {
+    font-size: 0.85rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #94A3B8 !important;
+    font-weight: 600 !important;
+}
+
+div[data-testid="stMetricValue"] {
+    font-size: 1.95rem !important;
+    color: #FFFFFF !important;
+    font-weight: 700 !important;
+    margin-top: 4px;
+}
+
+/* Píldora inferior (stMetricDelta) con fondo oscuro y texto brillante */
+div[data-testid="stMetricDelta"] {
+    background-color: rgba(16, 185, 129, 0.18) !important;
+    border: 1px solid rgba(16, 185, 129, 0.4) !important;
+    padding: 3px 10px !important;
+    border-radius: 20px !important;
+    margin-top: 6px !important;
+}
+
+div[data-testid="stMetricDelta"] > div,
+div[data-testid="stMetricDelta"] span {
+    color: #6EE7B7 !important;
+    font-weight: 600 !important;
+}
+
+div[data-testid="stMetricDelta"] svg {
+    fill: #6EE7B7 !important;
+}
+
+/* Navegación por Pestañas (Tabs) */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 10px;
+    background-color: #111827;
+    padding: 6px;
+    border-radius: 12px;
+    border: 1px solid #1E293B;
+}
+
+.stTabs [data-baseweb="tab"] {
+    height: 44px;
+    padding: 0 20px;
+    border-radius: 8px;
+    color: #CBD5E1 !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease;
+}
+
+.stTabs [data-baseweb="tab"] p {
+    color: #CBD5E1 !important;
+}
+
+.stTabs [data-baseweb="tab"]:hover {
+    color: #FFFFFF !important;
+    background-color: #1E293B;
+}
+
+.stTabs [aria-selected="true"] {
+    background: linear-gradient(90deg, #059669 0%, #10B981 100%) !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.stTabs [aria-selected="true"] p {
+    color: #FFFFFF !important;
+}
+
+/* Botón de descarga CSV */
+div.stDownloadButton > button {
+    background: linear-gradient(90deg, #0284C7 0%, #38BDF8 100%);
+    color: #FFFFFF !important;
+    border: none;
+    border-radius: 8px;
+    padding: 0.55rem 1.2rem;
+    font-weight: 600;
+}
+
+div.stDownloadButton > button:hover {
+    opacity: 0.92;
+    transform: translateY(-1px);
+}
+
+hr {
+    border-color: #1E293B !important;
+    margin: 1.5rem 0 !important;
+}
